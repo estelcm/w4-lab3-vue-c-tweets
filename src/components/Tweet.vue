@@ -16,9 +16,8 @@
         <span class="timestamp">Nov 30, 2020</span>
       </div>
 
-      <p class="message">
-        On December 7th, we will be hosting a #webinar that will introduce you
-        to #SQL! Are you ready? 🚀
+      <p class="message">{{tweet.message}}
+       
       </p>
 
       <div class="actions">
@@ -33,6 +32,11 @@
     <i class="fas fa-ellipsis-h"></i>
   </div>
 </template>
+<script>
+export default{
+props: ["tweet"],
+};
+</script>
 
 <style scoped>
 a {
