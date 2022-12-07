@@ -1,7 +1,10 @@
 <template>
+  
   <div class="app">
-    <Tweet :tweet="tweets[0]" />>
-  </div>
+  
+  <Tweet v-for="tweet of tweets" :tweet="tweet" /> 
+</div>
+ 
 </template>
 
 <script>
@@ -42,7 +45,20 @@
       return {
         tweets: TWEETS
       }
-    }
+    },
+//   computed: {
+//   totalTweets(){
+//   return this.tweets.slice(0,3);
+//   //   return totalTweets;
+//   //   console.log(totalTweets);
+    
+          
+//  }
+        
+//        }
+
+   
+
   }
 </script>
 

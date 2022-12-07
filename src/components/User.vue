@@ -11,7 +11,7 @@
 
 
 <script>
-import Tweet from './Tweet.vue';
+
 
    
 export default {
